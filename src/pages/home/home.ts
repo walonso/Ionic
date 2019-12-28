@@ -15,7 +15,7 @@ export class HomePage {
   }
 
   urlpaste(){
-    this.url = "https://gps.widetech.co/app/app.html?s=NCxqYWxmb25zbzE%3D";
+    this.url = "https://...";
     return this.sanitize.bypassSecurityTrustResourceUrl(this.url);
   }
 
