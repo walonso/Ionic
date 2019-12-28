@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
+import { AndroidPermissions } from '@ionic-native/android-permissions';
+
 
 @Component({
   selector: 'page-home',
@@ -9,7 +11,7 @@ import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser'
 export class HomePage {
 
   constructor(public navCtrl: NavController, private inAppBroser: InAppBrowser) {
-
+   
   }
 
   openWebPage() {
@@ -17,7 +19,7 @@ export class HomePage {
     const options : InAppBrowserOptions = {
       zoom: 'no'
     }
-    const browser = this.inAppBroser.create("https://gps.widetech.co/app/app.html?s=NCxqYWxmb25zbzE%3D",'_self', options)
+    this.inAppBroser.create("https://gps.widetech.co/app/app.html?s=NCxqYWxmb25zbzE%3D",'_self', options)
     
   }
 
