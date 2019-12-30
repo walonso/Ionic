@@ -49,6 +49,17 @@ export class MyApp {
           this.androidPermissions.PERMISSION.WRITE_EXTERNAL_STORAGE
         ]
       );
+
+      console.log("Video camera platform ready");
+     //navigator.mediaDevices
+  navigator.mediaDevices
+  .getUserMedia({
+    audio: true,
+    video: true
+  })
+  .then(mediaStream => {
+      console.log("Video camera platform ready")
+  });
       
       this.statusBar.styleDefault();
       this.splashScreen.hide();

@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { AndroidPermissions } from '@ionic-native/android-permissions';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+//import * as adapter from 'webrtc-adapter/out/adapter_no_global.js';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SplashScreen,
     InAppBrowser,
     AndroidPermissions,
+   // adapter,
     {provide: ErrorHandler, useClass: IonicErrorHandler}    
   ]
 })
