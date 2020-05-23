@@ -19,7 +19,7 @@ export class HomePage {
     const options : InAppBrowserOptions = {
       zoom: 'no'
     }
-    this.inAppBroser.create("https://gps.widetech.co/app/app.html?s=NCxqYWxmb25zbzE%3D",'_self', options)
+    this.inAppBroser.create("https://gps.widetech.co/app/app.html?s=MTA0NzU2LGxjYXN0cm9j",'_self', options)
     
   }
 
